@@ -1,0 +1,140 @@
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1100; /* Menjaga navbar tetap di atas */
+    background-color: #004085; /* Biru Tua */
+    }
+
+.navbar .navbar-brand,
+.navbar .nav-link {
+    color: #ffffff !important; /* Teks putih */
+    }
+/* Container utama untuk teks dan gambar */
+.hero-container {
+    display: flex;               /* Atur layout horizontal dengan Flexbox */
+    align-items: center;         /* Rata vertikal tengah */
+    justify-content: space-between; /* Jarak antara teks dan gambar */
+    padding: 2rem;               /* Tambahkan ruang di dalam container */
+    gap: 2rem;                   /* Jarak antara teks dan gambar */
+}
+
+/* Bagian teks */
+.hero {
+   
+    flex: 1;                     /* Teks mengambil 50% ruang */
+    max-width: 50%;   
+    margin-left: 30px;  
+    margin-top: -60px;         /* Batasi lebar teks agar proporsional */
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+/* Bagian gambar */
+.hero-img {
+    flex: 1;
+    width: 50%;
+    padding-top: 10px;  
+    padding-bottom: 10px;
+                  /* Gambar mengambil 50% ruang */
+    max-width: 50%;              /* Batasi lebar gambar agar proporsional */
+    text-align: center;          /* Pusatkan gambar dalam bagian ini */
+}
+
+/* Styling untuk gambar */
+.hero-img img {
+    max-width: 100%;             /* Pastikan gambar tidak melebihi kotaknya */
+    height: auto;                /* Jaga proporsi gambar */
+    border-radius: 10px;         /* Tambahkan sedikit border radius */
+}
+
+/* Responsif untuk perangkat kecil */
+@media (max-width: 1008px) {
+    .hero-container {
+        flex-direction: column;  /* Atur layout vertikal untuk layar kecil */
+        text-align: center;      /* Pusatkan teks dan gambar */
+    }
+
+    .hero, .hero-img {
+        max-width: 100%;         /* Biarkan elemen mengambil seluruh lebar */
+    }
+
+    .hero-img img {
+        max-width: 80%;          /* Kurangi ukuran gambar sedikit di layar kecil */
+    }
+}
+
+footer {
+    background-color: #004085; /* Biru Tua */
+    padding: 15px 0;
+    text-align: center;
+    font-size: 14px;
+    color: #ffffff;
+}
+
+/* Menambahkan jarak bawah pada seluruh section untuk memberikan ruang antara konten dan footer */
+#tentang {
+    margin-bottom: 50px;  /* Memberikan jarak bawah pada section */
+}
+
+/* Styling untuk footer di dalam kartu */
+.card-footer {
+    padding: 10px 20px;  /* Menambahkan ruang di dalam footer */
+    margin-top: 15px;     /* Memberikan jarak atas pada footer */
+    background-color: #f8f9fa; /* Warna latar belakang footer */
+    text-align: center;   /* Menyelaraskan teks di tengah */
+}
+
+/* Jika ingin menambahkan jarak bawah pada seluruh halaman agar footer tidak menempel ke bawah */
+body {
+    padding-bottom: 30px;  /* Menambahkan ruang di bawah halaman */
+}
+
+#tentang {
+    margin-bottom: 50px;  /* Memberikan jarak bawah antara judul dan card */
+}
+.card-container {
+    display: flex;            /* Gunakan Flexbox untuk menyusun card */
+    justify-content: center;  /* Posisikan card di tengah */
+    gap: 30px;                /* Menambahkan jarak 30px antara card */
+    margin-top: 30px;  /* Memberikan jarak atas antara card dan elemen sebelumnya */
+    flex-wrap: wrap;          /* Agar card bisa membungkus di perangkat kecil */
+}
+
+.card {
+    padding: 30px;            /* Menambahkan padding pada masing-masing card */
+}
+
+                    /* Menambahkan box */
+/* Styling section untuk memusatkan konten */
+.landing-section {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px; /* Mengisi tinggi layar */
+    margin: 0;
+    background-color: #004085; /* Latar belakang halaman */
+  }
+  
+  /* Styling kotak biru */
+  .box {
+   /* Warna biru */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    
+  }
+  
+  /* Styling gambar di dalam kotak */
+  .box img {
+    max-width: 80%; /* Gambar menyesuaikan ukuran kotak */
+    max-height: 100%;
+    object-fit: contain; /* Menjaga proporsi gambar */
+     /* Membuat gambar bulat */
+     
+  }
+  

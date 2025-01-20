@@ -14,16 +14,13 @@
         .navbar {
             position: sticky;
             top: 0;
-            z-index: 1000;
+            z-index: 1100;
             background-color: #004085;
         }
         .navbar .navbar-brand,
         .navbar .nav-link {
             color: #ffffff !important;
         }
-       
-
-        
 
         h1 {
             font-size: 3rem;
@@ -94,18 +91,26 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="http://localhost:8000/">Tentang</a></li>
                     <!-- Menu Dropdown -->
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Menu
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="http://localhost:8000/provinsi#">Peta Provinsi</a></li>
-                            <li><a class="dropdown-item" href="http://localhost:8000/kabkota#">Peta Kabupaten/Kota</a></li>
-                            <li><a class="dropdown-item" href="http://localhost:8000/gempa#">Peta Gempa</a></li>
+                            <li><a class="dropdown-item" href="http://localhost:8000/Guru">Peta Tematik Guru</a></li>
+                            <li><a class="dropdown-item" href="http://localhost:8000/Sekolah">Peta Tematik Sekolah</a></li>
+                            <li><a class="dropdown-item" href="http://localhost:8000/KepulauanSeribu">Peta Tematik Populasi</a></li>
+                            <li><a class="dropdown-item" href="http://localhost:8000/gempa">Peta Distribusi Gempa</a></li>
                         </ul>
                     </li>
                     <!-- Admin -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="http://localhost:8000/provinsi#">Provinsi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="http://localhost:8000/kabkota#">Kabupaten</a>
+                    </li>
                     <li class="nav-item">
                         <a class="nav-link" href="http://localhost:8000/admin/login">Admin</a>
                     </li>

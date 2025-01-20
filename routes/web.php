@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\JawaController;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,6 +21,10 @@ Route::get('/', function () {
 Route::get('/gempa', function () {
     return view('gempa');
 });
+
+Route::get('/luaswilayah', function () {
+    return view('luaswilayah');
+});
 // untuk menghubungkan ke controller provinsi
 use App\Http\Controllers\ProvinsiController;
 Route::get('/provinsi', [ProvinsiController::class, 'getProvinsiData']);
@@ -32,3 +37,14 @@ Route::get('/kabkota', [KabkotaController::class, 'getKabkotaData']);
 // tabel, jika eror hapus ini saja
 Route::get('/provinsi-tabel', [ProvinsiController::class, 'showTable']); // Menampilkan tabel
 
+// populasi
+Route::get('/KepulauanSeribu', [JawaController::class, 'index']);
+
+// guru
+Route::get('/Guru', [JawaController::class, 'Guru']);
+
+// sekolah
+Route::get('/sekolah', [JawaController::class, 'sekolah']);
+Route::get('/', function () {
+    return view('landingpage');
+});
